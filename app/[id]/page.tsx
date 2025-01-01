@@ -28,7 +28,9 @@ export default function Insurance() {
 
   useEffect(() => {
     const storedData = sessionStorage.getItem("data");
-    setData(JSON.parse(storedData));
+    if (storedData) {
+      setData(JSON.parse(storedData));
+    }
   }, []);
 
   return (
