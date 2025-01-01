@@ -1,21 +1,358 @@
+@import url(https://db.onlinewebfonts.com/c/dda65d7f418f4ab23abf484c807c9f17?family=Arboria-Medium);
+@import url(https://db.onlinewebfonts.com/c/1c7f14203d028f1c6f8914508f469cb9?family=Arboria-Book);
+@import url("https://fonts.cdnfonts.com/css/litsans");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/1c7f14203d028f1c6f8914508f469cb9?family=Arboria-Book);
+@import url("https://fonts.cdnfonts.com/css/litsans");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://db.onlinewebfonts.com/c/1c7f14203d028f1c6f8914508f469cb9?family=Arboria-Book");
+@import url(https://db.onlinewebfonts.com/c/dda65d7f418f4ab23abf484c807c9f17?family=Arboria-Medium);
+@import url(https://db.onlinewebfonts.com/c/1c7f14203d028f1c6f8914508f469cb9?family=Arboria-Book);
+@import url(https://db.onlinewebfonts.com/c/bf7395f715c4c074d2a39e1c273afbaa?family=Arboria-Light);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body > .skiptranslate,
+.goog-logo-link,
+.gskiptranslate,
+.goog-te-gadget span,
+.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+div#goog-gt- {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+  font-size: 0;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+#google_translate_element .goog-te-gadget {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+#google_translate_element select {
+  background: transparent;
+  color: #13519c;
+  border: 2px solid #13519c;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.border-gradient {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(180deg, #8dc14b 0%, rgba(67, 91, 36, 0) 100%);
+}
+
+body {
+  top: 0 !important;
+}
+
+.container {
+  font-family: "Arboria-Medium";
+  @apply w-full h-auto min-h-[500px] flex flex-col items-center relative overflow-x-clip;
+}
+
+.content_wrapper {
+  @apply w-full max-w-[1400px] min-[1800px]:max-w-[1600px] flex flex-col  items-center relative z-10 mt-40;
+}
+
+.mask_text {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: rgb(89, 89, 89);
+  background: linear-gradient(
+    90deg,
+    rgba(89, 89, 89, 1) 0%,
+    rgba(89, 89, 89, 1) 75%,
+    rgba(89, 89, 89, 0.5) 100%
+  );
+  -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+  -webkit-text-fill-color: transparent; /* make the text transparent so * the background shows through*/
+  @apply text-[30px] font-semibold;
+}
+
+.mask_text2 {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: rgb(7, 97, 191);
+  background: linear-gradient(
+    0deg,
+    rgba(7, 97, 191, 1) 0%,
+    rgba(7, 97, 191, 1) 50%,
+    rgba(129, 172, 218, 1) 100%
+  );
+  -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+  -webkit-text-fill-color: transparent; /* make the text transparent so * the background shows through*/
+  @apply text-5xl tracking-widest leading-[70px] max-[1300px]:leading-[50px] font-semibold;
+}
+
+.mask_text3 {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: rgb(7, 97, 191);
+  background: linear-gradient(
+    90deg,
+    rgb(167, 186, 213) 0%,
+    rgba(7, 97, 191, 1) 50%,
+    rgb(12, 94, 168) 100%
+  );
+  -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+  -webkit-text-fill-color: transparent; /* make the text transparent so * the background shows through*/
+  @apply text-xl font-semibold;
+}
+
+.mask_text4 {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: rgb(7, 97, 191);
+  background: linear-gradient(90deg, #13519c 0%, #13519c 100%);
+  -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+  -webkit-text-fill-color: transparent; /* make the text transparent so * the background shows through*/
+  @apply text-5xl font-semibold tracking-[-1px] leading-[70px];
+}
+
+.mask_text5 {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: rgb(7, 97, 191);
+  background: linear-gradient(90deg, #13519c 0%, #13519c 100%);
+  -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+  -webkit-text-fill-color: transparent; /* make the text transparent so * the background shows through*/
+  @apply text-5xl font-semibold leading-[80px];
+}
+
+.shadow_inner {
+  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.mask_text {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: rgb(89, 89, 89);
+  background: linear-gradient(90deg, #858585 0%, #bdbdbd 100%);
+  -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+  -webkit-text-fill-color: transparent; /* make the text transparent so * the background shows through*/
+  @apply text-[22px] font-[400];
+}
+
+.mask_text2 {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: rgb(7, 97, 191);
+  background: linear-gradient(180deg, #2983d3 0%, #005abb 100%);
+  -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+  -webkit-text-fill-color: transparent; /* make the text transparent so * the background shows through*/
+  @apply text-[36px] tracking-widest leading-[50px] max-[1300px]:leading-[30px] font-[400];
+}
+
+.mask_text3 {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: rgb(7, 97, 191);
+  background: linear-gradient(90deg, #bbbbbb 0%, #3086ee 100%);
+  -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+  -webkit-text-fill-color: transparent; /* make the text transparent so * the background shows through*/
+  @apply text-[18px] font-[400];
+}
+
+.mask_text4 {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: rgb(7, 97, 191);
+  background: linear-gradient(90deg, #2983d3 0%, #003780 100%);
+  -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+  -webkit-text-fill-color: transparent; /* make the text transparent so * the background shows through*/
+  @apply text-[36px] font-[400] tracking-[-1px] leading-[70px] max-[800px]:text-3xl;
+}
+
+.mask_text5 {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: rgb(7, 97, 191);
+  background: linear-gradient(90deg, #13519c 0%, #13519c 100%);
+  -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+  -webkit-text-fill-color: transparent; /* make the text transparent so * the background shows through*/
+  @apply text-[36px] max-[800px]:text-3xl font-[400] leading-[80px];
+}
+
+.card_background {
+  @apply w-[260px] max-[800px]:w-56 max-[1300px]:w-64 min-[1800px]:w-80 h-[300px]  rounded-xl p-[2px] relative bg-gradient-to-r from-[#0761bf]/70 to-50% to-transparent overflow-hidden;
+}
+
+.animated_back {
+  animation: animated_background 5s linear infinite;
+  @apply absolute w-full h-full  scale-[3] top-0 left-0 -z-10 bg-gradient-to-r from-[#0761bf]/70 to-50% to-transparent;
+}
+
+@keyframes animated_background {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.containerOne {
+  font-family: Arboria-Book;
+  @apply w-full h-32 flex flex-col items-center absolute top-0 z-50;
+}
+
+.wrapper {
+  background: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 0, 0, 0));
+  @apply w-full h-72 flex flex-col items-center relative;
+}
+
+.logo_wrapper {
+  position: relative;
+  @apply w-fit h-fit max-w-[300px] max-[500px]:h-16 flex flex-col items-center justify-center px-5 rounded-lg;
+  /* bg-[#fff] */
+}
+
+.nav_links {
+  /* @apply flex uppercase flex-row text-[#47740E] items-center max-[1150px]:hidden max-[1300px]:gap-3 gap-8 min-[1800px]:gap-14 min-[1800px]:gap-20 min-[1600px]:mx-12 mx-3; */
+  @apply flex uppercase flex-row text-[#13519C] items-center max-[1150px]:hidden gap-16 min-[1600px]:mx-12 mx-3;
+}
+
+.nav_links_mob {
+  @apply flex flex-col items-start gap-8 mb-4;
+}
+
+.logo_wrapper::after {
+  border-left: 2px solid #13519c;
+  content: "";
+  display: block;
+  height: 40px;
+  right: -6px;
+  top: -6px;
+  position: absolute;
+  width: 1px;
+  z-index: 0;
+}
+
+ul {
+  @apply w-full;
+}
+
+ul li {
+  @apply w-full flex gap-4 items-center mt-2 mb-2;
+}
+
+.loginModal {
+  /* width: 620px !important; */
+  width: 700px !important;
+}
+
+.containerTwo {
+  font-family: "Arboria-Medium";
+  @apply w-full h-auto flex flex-col items-center mt-40 z-10 overflow-x-clip;
+}
+
+.tabs {
+  @apply max-[1000px]:w-[70px] w-[120px] h-10 bg-gradient-to-l from-white to-transparent rounded text-[#13519C] max-[1000px]:text-[12px] text-[14px] tracking-[1px] flex items-center justify-center;
+}
+
+.list-scroll::-webkit-scrollbar {
+  height: 3px;
+  width: 5px;
+  border-radius: 10px;
+  background: transparent;
+}
+.list-scroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: none;
+}
+.list-scroll::-webkit-scrollbar-thumb {
+  background: #a8b5bd7d;
+  border-radius: 10px;
+}
+.list-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a8b5bd7d;
+}
+
+.contactLastColumn {
+  background: linear-gradient(
+    180deg,
+    rgba(19, 81, 156, 0.15) 0%,
+    rgba(116, 181, 255, 0) 100%
+  );
+}
+
+.gradientColumn {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+/* Remove google translate banner and branding */
+.goog-te-banner-frame {
+  display: none; /* Remove Google banner at the top */
+}
+body {
+  position: unset !important; /* Remove space created by Google banner at the top */
 }
