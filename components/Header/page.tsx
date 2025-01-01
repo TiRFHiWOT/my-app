@@ -430,7 +430,7 @@ export default function Header() {
                   onMouseEnter={dropdownOpenHandler2}
                   onMouseLeave={dropdownCloseHandler2}
                   onClick={() => window.scrollTo(0, 0)}
-                  href={"/health_insurance"}
+                  href={"/architect_and_surveyors_insurance"}
                   className={
                     "pb-2 font-semibold text-[14px] tracking-[1px] font-medium flex items-center gap-2 "
                   }
