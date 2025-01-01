@@ -70,11 +70,11 @@ export default function Insurance() {
                 </span>
 
                 <div
-                  className={"w-auto flex items-start flex-wrap gap-10 mt-10"}
+                  className={"w-auto flex fitems-start flex-wrap gap-10 mt-10"}
                 >
                   <div
                     className={
-                      "border-b-2 border-[#2983D3] rounded-2xl w-[45%] mt-3"
+                      "border-b-2 border-[#2983D3] rounded-2xl w-full lg:w-[45%] mt-3"
                     }
                   >
                     <input
@@ -88,7 +88,7 @@ export default function Insurance() {
 
                   <div
                     className={
-                      "border-b-2 border-[#2983D3] rounded-2xl w-[45%] mt-3"
+                      "border-b-2 border-[#2983D3] rounded-2xl w-full lg:w-[45%] mt-3"
                     }
                   >
                     <input
@@ -102,7 +102,7 @@ export default function Insurance() {
 
                   <div
                     className={
-                      "border-b-2 border-[#2983D3] rounded-2xl w-[45%] mt-3"
+                      "border-b-2 border-[#2983D3] rounded-2xl w-full lg:w-[45%] mt-3"
                     }
                   >
                     <input
@@ -116,7 +116,7 @@ export default function Insurance() {
 
                   <div
                     className={
-                      "border-b-2 border-[#2983D3] rounded-2xl w-[45%] mt-3"
+                      "border-b-2 border-[#2983D3] rounded-2xl w-full lg:w-[45%] mt-3"
                     }
                   >
                     <input

@@ -30,9 +30,9 @@ const ContactUs = () => {
           }
         >
           <div
-            className={`gradientColumn flex w-full justify-between h-full rounded-xl bg-white overflow-hidden pr-8 pl-14 py-4`}
+            className={`gradientColumn flex flex-col lg:flex-row w-full justify-between h-full rounded-xl bg-white overflow-hidden pr-8 pl-14 py-4`}
           >
-            <div className="w-[50%] flex flex-col items-start">
+            <div className="lg:w-[50%] flex flex-col items-start">
               <p className="text-[#13519C] text-[24px] font-semibold">
                 Contact Us
               </p>
@@ -41,8 +41,8 @@ const ContactUs = () => {
               </span>
               <div className="w-full mt-10">
                 <form className="">
-                  <div className="flex gap-8">
-                    <div className="flex flex-col items-start w-[47%]">
+                  <div className="flex flex-col md:flex-row gap-8">
+                    <div className="flex flex-col items-start lg:w-[47%]">
                       <label
                         className="text-[#8D8D8D] text-[14px] font-medium"
                         htmlFor="firstName"
@@ -55,7 +55,7 @@ const ContactUs = () => {
                         name="firstName"
                       />
                     </div>
-                    <div className="flex flex-col items-start w-[47%]">
+                    <div className="flex flex-col items-start lg:w-[47%]">
                       <label
                         className="text-[#8D8D8D] text-[14px] font-medium"
                         htmlFor="lastName"
@@ -69,8 +69,8 @@ const ContactUs = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex gap-8 mt-10">
-                    <div className="flex flex-col items-start w-[47%]">
+                  <div className="flex flex-col md:flex-row gap-8 mt-10">
+                    <div className="flex flex-col items-start lg:w-[47%]">
                       <label
                         className="text-[#8D8D8D] text-[14px] font-medium"
                         htmlFor="email"
@@ -83,7 +83,7 @@ const ContactUs = () => {
                         name="email"
                       />
                     </div>
-                    <div className="flex flex-col items-start w-[47%]">
+                    <div className="flex flex-col items-start lg:w-[47%]">
                       <label
                         className="text-[#8D8D8D] text-[14px] font-medium"
                         htmlFor="phoneNumber"
@@ -101,7 +101,7 @@ const ContactUs = () => {
                     <p className="text-[14px] font-semibold text-[#011C2A]">
                       Select Subject?
                     </p>
-                    <div className="flex gap-5">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
                       <div className="flex items-center mt-2 gap-2">
                         <input type="checkbox" id="generalInquiry" />
                         <label
@@ -179,7 +179,7 @@ const ContactUs = () => {
             {/* /////////////////// */}
             <div
               className={
-                "w-[42%] rounded-t-xl h-fit bg-gradient-to-b from-[#2983D3] to-transparent p-[1.5px]"
+                "lg:w-[42%] rounded-t-xl h-fit bg-gradient-to-b from-[#2983D3] to-transparent p-[1.5px]"
               }
             >
               <div
