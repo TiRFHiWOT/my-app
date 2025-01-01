@@ -14,15 +14,17 @@ export default function LandingPage() {
   const router = useRouter();
 
   function getCategoryNo1() {
-    const width = window.innerWidth;
-    if (width < 1023) {
-      return CATEGORIES.length;
-    } else if (width >= 1280 && width <= 1536) {
-      return 4;
-    } else if (width >= 1023 && width <= 1280) {
-      return 3;
-    } else {
-      return 5;
+    if (typeof window !== "undefined") {
+      const width = window.innerWidth;
+      if (width < 1023) {
+        return CATEGORIES.length;
+      } else if (width >= 1280 && width <= 1536) {
+        return 4;
+      } else if (width >= 1023 && width <= 1280) {
+        return 3;
+      } else {
+        return 5;
+      }
     }
   }
 
