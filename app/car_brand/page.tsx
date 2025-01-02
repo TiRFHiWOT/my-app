@@ -753,7 +753,10 @@ export default function CarBrand() {
     <>
       <Back />
       <Header />
-      <div className="mx-auto mt-40  w-full h-auto min-h-[500px] flex flex-col items-center relative overflow-x-clip">
+      <div
+        className="mx-auto mt-40  w-full h-auto min-h-[500px] flex flex-col items-center relative overflow-x-clip"
+        style={{ fontFamily: `Arboria-Book`, fontWeight: `400` }}
+      >
         <ToastContainer />
 
         {leadCreatorPopup && (
@@ -891,7 +894,9 @@ export default function CarBrand() {
               "w-full flex flex-col items-start bg-gradient-to-b from-white/70 to-white text-start mt-4 px-5 pt-3 rounded-t-xl"
             }
           >
-            <span className={"text-[36px] max-[500px]:text-[28px] font-[400] "}>
+            <span
+              className={"text-[36px] max-[500px]:text-[28px] font-semibold "}
+            >
               You are looking for a car insurance for…
             </span>
             <span
@@ -903,7 +908,11 @@ export default function CarBrand() {
             </span>
 
             <div className={"flex flex-col items-start"}>
-              <span className={"text-[20px] max-[500px]:text-[16px]  mt-3"}>
+              <span
+                className={
+                  "text-[20px] max-[500px]:text-[16px] font-semibold mt-3"
+                }
+              >
                 Select car brand
               </span>
 

@@ -23,6 +23,7 @@ const ContactUs = () => {
       <Header />
       <div
         className={` mx-auto mt-40  w-full h-auto min-h-[500px] flex flex-col items-center relative overflow-x-clip`}
+        style={{ fontFamily: `Arboria-Book`, fontWeight: `400` }}
       >
         <div
           className={

@@ -37,7 +37,10 @@ export default function Insurance() {
     <>
       <Back />
       <Header />
-      <div className="mx-auto mt-40  w-full h-auto min-h-[500px] flex flex-col items-center relative overflow-x-clip">
+      <div
+        className="mx-auto mt-40  w-full h-auto min-h-[500px] flex flex-col items-center relative overflow-x-clip"
+        style={{ fontFamily: "Arboria-Book", fontWeight: "400" }}
+      >
         <ToastContainer />
         <div
           className={
@@ -63,7 +66,6 @@ export default function Insurance() {
                   {data?.title || ""}
                 </span>
                 <span
-                  style={{ fontFamily: "Arboria-Book", fontWeight: "400" }}
                   className={"text-[18px] max-[500px]:text-[14px] font-[400]  "}
                 >
                   {data?.description || ""}

@@ -18,7 +18,10 @@ export default function AboutUs() {
     <>
       <Back />
       <Header />
-      <div className="mx-auto mt-40  w-full h-auto min-h-[500px] flex flex-col items-center relative overflow-x-clip">
+      <div
+        className="mx-auto mt-40  w-full h-auto min-h-[500px] flex flex-col items-center relative overflow-x-clip"
+        style={{ fontFamily: `Arboria-Book`, fontWeight: `400` }}
+      >
         <div
           className={
             "w-full max-[520px]:px-4 max-[1200px]:px-10 max-[1300px]:max-w-[1150px] max-w-[1200px] min-[1600px]:max-w-[1400px] min-[1800px]:max-w-[1600px] h-auto flex flex-col items-center pb-20"
@@ -41,12 +44,11 @@ export default function AboutUs() {
                     "max-[1150px]:w-full flex flex-col items-start text-start"
                   }
                 >
-                  <span className={"text-[24px] font-semibold"}>
+                  <span className={"text-[23px] font-semibold tracking-wide"}>
                     About <br /> Rielverse
                   </span>
 
                   <span
-                    style={{ fontFamily: `Arboria-Book`, fontWeight: `400` }}
                     className={
                       "text-[18px] max-[1150px]:w-full min-[1150px]:w-[500px] mt-5"
                     }
