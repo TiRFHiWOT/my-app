@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, X } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Back from "@/components/Back/page";
 import Header from "@/components/Header/page";
 import { FaArrowLeftLong } from "react-icons/fa6";
