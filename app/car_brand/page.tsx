@@ -900,7 +900,6 @@ export default function CarBrand() {
               You are looking for a car insurance for…
             </span>
             <span
-              style={{ fontFamily: "Arboria-Book", fontWeight: "400" }}
               className={"text-[18px] max-[500px]:text-[14px] font-[400]  "}
             >
               Fill the questionnaire to get your personalised car insurance
