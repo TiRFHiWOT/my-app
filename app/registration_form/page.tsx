@@ -62,8 +62,8 @@ export default function RegistrationForm() {
               </div>
             </div>
 
-            <div className="flex flex-row gap-x-20 h-full w-full lg:h-96 ">
-              <div className="flex flex-col">
+            <div className="flex flex-row gap-x-20 h-full w-full lg:h-96 pb-20 lg:pb-0 ">
+              <div className="flex flex-col  w-[80%]">
                 <div>
                   <label className="block text-gray-800 text-lg font-semibold">
                     Address
