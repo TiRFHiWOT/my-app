@@ -1,9 +1,6 @@
 "use client";
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -74,7 +71,7 @@ export default function CommentSwiper() {
           spaceBetween={100}
           speed={2000}
           slidesPerView={1}
-          onSlideChange={() => console.log("slide change")}
+          onSlideChange={() => console.log("")}
           onSwiper={(swiper) => console.log(swiper)}
         >
           {REVIEWS.map((value, index) => (
